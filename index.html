@@ -13,7 +13,7 @@
       --line:#e7dfd5;
       --text:#202020;
       --muted:#666;
-      --header:92px;
+      --header:148px;
       --radius:24px;
       --shadow:0 16px 50px rgba(0,0,0,.08);
     }
@@ -29,11 +29,8 @@
       border-bottom:1px solid rgba(0,0,0,.06)
     }
     .header-inner{max-width:1360px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:22px;min-height:var(--header)}
-    .brand{display:flex;align-items:center;gap:14px;min-width:240px}
-    .brand img{width:62px;height:62px;object-fit:contain}
-    .brand-text{display:flex;flex-direction:column}
-    .brand-text strong{font-size:16px;letter-spacing:.03em}
-    .brand-text span{font-size:12px;color:var(--muted)}
+    .brand{display:flex;align-items:center;gap:0;min-width:150px}
+    .brand img{width:124px;height:124px;object-fit:contain}
 
     .desktop-nav{margin-left:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
     .desktop-nav > button,.nav-dropdown-head > button:first-child{
@@ -192,7 +189,7 @@
       .section-shell{padding:38px 18px 52px}
       .header-inner{padding:12px 16px}
       .brand{min-width:unset;gap:10px}
-      .brand img{width:54px;height:54px}
+      .brand img{width:92px;height:92px}
       .brand-text strong{font-size:15px}
       .home-grid{width:calc(100% - 32px)}
       .hero-copy p{font-size:16px}
@@ -219,11 +216,7 @@
     <div class="header-inner">
       <a class="brand" href="#" onclick="showSection('home'); return false;">
         <img src="logo.png" alt="AMKA" />
-        <div class="brand-text">
-          <strong>AMKA</strong>
-          <span>Wake up and Dream</span>
-        </div>
-      </a>
+</a>
 
       <nav class="desktop-nav" aria-label="Navigation principale">
         <button data-target="home" class="active">Accueil</button>
