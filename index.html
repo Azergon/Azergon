@@ -2420,6 +2420,471 @@ body.gallery-lightbox-open{
 #testimonials .godwin-top-text p{
   text-align:justify !important;
 }
+
+
+/* --- v72 Immersion testimonials: tighter line spacing, matching testimonials --- */
+#immersion-testimonials .immersion-testimonial-top-text p,
+#immersion-testimonials .immersion-testimonial-lower-text p{
+  line-height:1.55 !important;
+}
+
+
+/* --- v73 responsive mobile / iPhone SE baseline + animated sidebar --- */
+
+/* Base overflow protection */
+html, body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+img, video, iframe{
+  max-width:100%;
+}
+button, input, textarea, select{
+  max-width:100%;
+}
+
+/* Mobile menu overlay */
+.mobile-nav-backdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(18,12,42,.38);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .28s ease, visibility .28s ease;
+  z-index:998;
+}
+.mobile-nav-backdrop.open{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.mobile-nav-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:8px 2px 16px;
+  border-bottom:1px solid rgba(40,21,110,.12);
+  margin-bottom:2px;
+}
+.mobile-nav-title{
+  font-family:Georgia,serif;
+  font-size:20px;
+  font-weight:600;
+  color:#28156E;
+}
+.mobile-nav-close{
+  width:38px;
+  height:38px;
+  border:0;
+  border-radius:50%;
+  background:#f4f1fb;
+  color:#28156E;
+  font-size:26px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.menu-toggle{
+  position:relative;
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  padding:0!important;
+}
+.menu-toggle span{
+  display:block;
+  width:18px;
+  height:2px;
+  border-radius:999px;
+  background:#28156E;
+  transition:transform .24s ease, opacity .2s ease;
+}
+.menu-toggle.open span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2){
+  opacity:0;
+}
+.menu-toggle.open span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+
+body.mobile-nav-open{
+  overflow:hidden;
+}
+
+/* Desktop untouched */
+@media (min-width: 901px){
+  .mobile-nav-backdrop{
+    display:none!important;
+  }
+}
+
+/* Tablet + smartphone */
+@media (max-width: 900px){
+  .desktop-nav{
+    display:none!important;
+  }
+
+  .menu-toggle{
+    display:flex!important;
+    width:42px!important;
+    height:42px!important;
+    border-radius:14px!important;
+    background:#f6f3fb!important;
+    border:1px solid rgba(40,21,110,.12)!important;
+    box-shadow:0 6px 16px rgba(40,21,110,.08);
+    flex:0 0 42px;
+  }
+
+  .mobile-nav{
+    display:block!important;
+    position:fixed!important;
+    top:0!important;
+    right:0!important;
+    bottom:0!important;
+    width:min(86vw,360px)!important;
+    height:100dvh!important;
+    padding:18px 18px 24px!important;
+    background:rgba(255,255,255,.98)!important;
+    border:0!important;
+    box-shadow:-18px 0 44px rgba(15,10,38,.18)!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain;
+    transform:translateX(104%)!important;
+    opacity:0!important;
+    visibility:hidden!important;
+    transition:transform .32s cubic-bezier(.22,.8,.28,1), opacity .22s ease, visibility .32s ease!important;
+    z-index:999!important;
+  }
+  .mobile-nav.open{
+    transform:translateX(0)!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+
+  .mobile-nav > button,
+  .mobile-dropdown-head > button:first-child{
+    min-height:46px;
+    padding:12px 4px!important;
+    font-size:15px!important;
+  }
+  .mobile-arrow{
+    min-width:44px;
+    min-height:44px;
+    padding:10px!important;
+  }
+  .mobile-submenu{
+    border-radius:12px;
+    margin:2px 0 8px;
+    padding-left:14px!important;
+  }
+  .mobile-submenu button{
+    min-height:42px;
+    padding:10px 4px!important;
+  }
+
+  .mobile-language-module{
+    padding:14px 2px 4px!important;
+  }
+
+  .header-inner{
+    width:100%;
+    min-height:64px!important;
+    padding:6px 14px!important;
+  }
+  .brand img{
+    width:68px!important;
+    height:58px!important;
+  }
+
+  .section-shell{
+    width:100%;
+    max-width:none!important;
+    padding:30px 18px 46px!important;
+  }
+  .section-intro{
+    max-width:100%!important;
+    margin-bottom:26px!important;
+  }
+  .section-intro h2,
+  #projects .projects-custom > h2{
+    font-size:clamp(30px,9vw,44px)!important;
+    line-height:1.08!important;
+  }
+
+  .home-hero{
+    min-height:auto!important;
+    overflow:visible!important;
+  }
+  #home .home-grid{
+    position:relative!important;
+    display:flex!important;
+    flex-direction:column!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:auto!important;
+    gap:24px!important;
+    padding:30px 18px 26px!important;
+  }
+  #home .hero-copy{
+    width:100%!important;
+    max-width:100%!important;
+  }
+  #home .hero-copy h1{
+    font-size:clamp(58px,20vw,90px)!important;
+    line-height:.9!important;
+  }
+  #home .hero-copy p,
+  #home .hero-copy .hero-description{
+    max-width:100%!important;
+    font-size:16px!important;
+    line-height:1.58!important;
+  }
+  #home .hero-actions{
+    gap:8px!important;
+    margin-top:20px!important;
+  }
+  #home .hero-actions button{
+    flex:1 1 auto;
+    min-height:44px;
+    padding:11px 14px!important;
+  }
+  #home .hero-video-wrap{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0!important;
+  }
+  .video-caption{
+    padding:10px 12px!important;
+  }
+
+  .profile,
+  .testimonial-rich{
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+    padding:24px 0!important;
+  }
+  .profile img,
+  .testimonial-rich img{
+    width:min(74%,300px)!important;
+    margin:0 auto!important;
+  }
+  .profile h2{
+    font-size:30px!important;
+  }
+
+  .about-history-row{
+    grid-template-columns:1fr!important;
+    gap:22px!important;
+  }
+  .about-history-media{
+    order:2;
+  }
+
+  .summary-media-block,
+  #about .summary-wrap-card{
+    display:block!important;
+    width:100%!important;
+  }
+  .summary-media-block .summary-media-image{
+    width:100%!important;
+    margin:18px 0 0!important;
+  }
+  .summary-media-block .summary-media-image img{
+    width:100%!important;
+    max-height:260px!important;
+    object-fit:cover!important;
+    border-radius:16px!important;
+  }
+
+  #about .summary-wrap-card .summary-wrap-image{
+    float:none!important;
+    width:min(46%,180px)!important;
+    max-width:180px!important;
+    margin:0 16px 10px 0!important;
+  }
+
+  .projects-photo-grid,
+  .story-grid{
+    grid-template-columns:1fr!important;
+  }
+  .projects-photo-grid img,
+  .story-grid img{
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:4/3!important;
+  }
+
+  #mission .section-lead-image,
+  #projects .section-lead-image{
+    width:62%!important;
+    max-width:280px!important;
+  }
+
+  #immersion-testimonials .immersion-testimonial-top{
+    display:block!important;
+  }
+  #immersion-testimonials .immersion-testimonial-side-image{
+    width:min(72%,280px)!important;
+    max-width:280px!important;
+    margin:0 auto 18px!important;
+    display:block!important;
+  }
+
+  .partners-row-4,
+  .partners-row-3{
+    width:100%!important;
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .partner-card{
+    min-width:0!important;
+  }
+  .partner-logo{
+    width:100%!important;
+    max-width:110px!important;
+    height:82px!important;
+    object-fit:contain!important;
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  .gallery-card img{
+    height:160px!important;
+  }
+
+  .compact-contact-form{
+    padding:16px!important;
+  }
+  .compact-field-row{
+    grid-template-columns:1fr!important;
+    gap:7px!important;
+    margin-bottom:14px!important;
+  }
+  .compact-field-row input,
+  .compact-field-row textarea{
+    width:100%!important;
+  }
+
+  #donations .transfer-value-row{
+    gap:8px!important;
+  }
+  #donations .transfer-value-row .beneficiary-address,
+  #donations .transfer-value-row .communication-box{
+    width:auto!important;
+    max-width:none!important;
+    flex:1 1 auto!important;
+  }
+}
+
+/* iPhone SE / very small smartphone baseline */
+@media (max-width: 375px){
+  .header-inner{
+    padding:5px 10px!important;
+  }
+  .brand img{
+    width:62px!important;
+    height:54px!important;
+  }
+  .menu-toggle{
+    width:40px!important;
+    height:40px!important;
+  }
+  .mobile-nav{
+    width:90vw!important;
+    padding:15px 14px 20px!important;
+  }
+  .section-shell{
+    padding:26px 14px 40px!important;
+  }
+  #home .home-grid{
+    padding:24px 14px 22px!important;
+  }
+  #home .hero-copy h1{
+    font-size:clamp(54px,21vw,74px)!important;
+  }
+  #home .hero-copy .tagline{
+    font-size:24px!important;
+  }
+  #home .hero-actions{
+    flex-direction:column!important;
+  }
+  #home .hero-actions button{
+    width:100%!important;
+  }
+  .video-control-btn{
+    width:34px!important;
+    height:34px!important;
+  }
+  .amka-seek-wrap{
+    min-width:64px!important;
+  }
+  .section-intro h2,
+  #projects .projects-custom > h2{
+    font-size:29px!important;
+  }
+  .profile h2{
+    font-size:27px!important;
+  }
+  .profile p,
+  .story-copy p,
+  .projects-custom p,
+  .mission-panel p,
+  .immersion-testimonial p,
+  .testimonial-rich p{
+    font-size:15px!important;
+  }
+  .partners-row-4,
+  .partners-row-3{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .gallery-card img{
+    height:138px!important;
+  }
+  #about .summary-wrap-card .summary-wrap-image{
+    width:42%!important;
+    max-width:145px!important;
+  }
+}
+
+/* Absolute minimum width support for legacy iPhone SE / narrow screens */
+@media (max-width: 320px){
+  .section-shell{
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+  #home .home-grid{
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+  .mobile-nav{
+    width:94vw!important;
+  }
+  .gallery-grid{
+    grid-template-columns:1fr!important;
+  }
+  .partners-row-4,
+  .partners-row-3{
+    grid-template-columns:1fr 1fr!important;
+  }
+  .language-option,
+  .mobile-language-option{
+    font-size:10px!important;
+  }
+}
 </style>
 </head>
 <body><script>
@@ -2448,6 +2913,14 @@ body.gallery-lightbox-open{
 
     const mobileNav = document.getElementById('mobileNav');
     if (mobileNav) mobileNav.classList.remove('open');
+    const mobileBackdrop = document.getElementById('mobileNavBackdrop');
+    if (mobileBackdrop) mobileBackdrop.classList.remove('open');
+    const mobileToggle = document.querySelector('.menu-toggle');
+    if (mobileToggle) {
+      mobileToggle.classList.remove('open');
+      mobileToggle.setAttribute('aria-expanded','false');
+    }
+    document.body.classList.remove('mobile-nav-open');
 
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   };
@@ -2505,10 +2978,23 @@ body.gallery-lightbox-open{
     toggleMenu('mobileTestimonialsSubmenu', event);
   };
 
-  window.toggleMobileMenu = function(){
+  window.toggleMobileMenu = function(forceState){
     const menu = document.getElementById('mobileNav');
+    const backdrop = document.getElementById('mobileNavBackdrop');
+    const toggle = document.querySelector('.menu-toggle');
     if (!menu) return;
-    menu.classList.toggle('open');
+
+    const shouldOpen = typeof forceState === 'boolean'
+      ? forceState
+      : !menu.classList.contains('open');
+
+    menu.classList.toggle('open', shouldOpen);
+    if (backdrop) backdrop.classList.toggle('open', shouldOpen);
+    if (toggle) {
+      toggle.classList.toggle('open', shouldOpen);
+      toggle.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+    }
+    document.body.classList.toggle('mobile-nav-open', shouldOpen);
   };
 
   document.addEventListener('DOMContentLoaded', function(){
@@ -2567,9 +3053,9 @@ body.gallery-lightbox-open{
 <button data-target="contact">Contact</button>
 <button aria-label="Dons &amp; soutien" class="donate-cta" onclick="showSection('donations')" type="button">Dons &amp; soutien</button><div aria-label="Langues" class="language-module"><span aria-label="Français" class="language-option" data-lang="fr" role="button" tabindex="0" title="Français">FR</span><span aria-label="English" class="language-option" data-lang="en" role="button" tabindex="0" title="Anglais">ANG</span><span aria-label="Nederlands" class="language-option" data-lang="nl" role="button" tabindex="0" title="Néerlandais">NL</span></div>
 </nav>
-<button aria-label="Ouvrir le menu" class="menu-toggle" onclick="toggleMobileMenu()" type="button">☰</button>
+<button aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle" onclick="toggleMobileMenu()" type="button"><span></span><span></span><span></span></button>
 </div>
-<nav class="mobile-nav" id="mobileNav">
+<nav class="mobile-nav" id="mobileNav"><div class="mobile-nav-top"><span class="mobile-nav-title">Menu</span><button aria-label="Fermer le menu" class="mobile-nav-close" onclick="toggleMobileMenu(false)" type="button">×</button></div>
 <button data-target="home">Accueil</button>
 <div class="mobile-dropdown">
 <div class="mobile-dropdown-head">
@@ -2595,7 +3081,7 @@ body.gallery-lightbox-open{
 <button data-target="contact">Contact</button>
 <button aria-label="Dons &amp; soutien" class="donate-cta donate-cta-mobile" onclick="showSection('donations')" type="button">Dons &amp; soutien</button><div aria-label="Langues" class="mobile-language-module"><span aria-label="Français" class="mobile-language-option" data-lang="fr" role="button" tabindex="0">FR</span><span aria-label="English" class="mobile-language-option" data-lang="en" role="button" tabindex="0">ANG</span><span aria-label="Nederlands" class="mobile-language-option" data-lang="nl" role="button" tabindex="0">NL</span></div>
 </nav>
-</header>
+</header><div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="toggleMobileMenu(false)"></div>
 <main>
 <section class="page-section active" id="home">
 <div class="home-hero">
@@ -2634,7 +3120,7 @@ body.gallery-lightbox-open{
 </div>
 </article>
 <article class="profile profile-image-left">
-<img alt="Patrick Martens" src="patrick.jpg"/>
+<img alt="Patrick Martens" src="patrick_new.jpg"/>
 <div>
 <h2>Patrick Martens</h2>
 <p>Ils ont la peau noire, du soleil du lever au coucher, des fruits et légumes plein de saveurs, un sourire perpétuel, une voix chantante, un sens de l'entraide fortement développé, une croyance en Dieu inimaginable, une joie de vivre malgré tout. Beaucoup d’enfants ici n’ont plus de parents : une question leur revient chaque jour : vais-je manger aujourd’hui ?
@@ -2685,7 +3171,7 @@ Toutes ces différences ne me laissent pas indifférent. En les aidant, en étan
 <p>Vous séjournerez dans la simplicité auprès de ces sœurs, en partageant leur quotidien tel que cuisiner, faire les courses et aider dans le potager. Nous vous donnons également la possibilité de mettre à profit l’un de vos talents dans un projet de cluster. Ensemble, nous examinerons quels projets de cluster sont envisageables en fonction des besoins sur place.</p>
 <p>En bref, vous vivez parmi les habitants, loin des touristes et des terres de safaris. Bien entendu, vous pouvez aussi prolonger cette expérience en découvrant ce magnifique pays. Pour cela, nous serons heureux de vous mettre en contact avec notre guide de confiance.</p>
 </div>
-<div class="summary-media-block image-right"><div class="summary-media-content"><h2 style=";font-size:clamp(22px,4.5vw,50px)!important;">Témoignages Séjours d’immersion</h2><p>Découvrez le témoignage d’une participante ayant vécu un mois au Kenya au plus près de la communauté, des enfants et du quotidien du projet AMKA.</p><button class="summary-more-btn" onclick="showSection('immersion-testimonials')" type="button">Témoignage immersion</button></div><div class="summary-media-image"><img alt="Témoignage immersion AMKA" src="immersion_testimonial_custom.png"/></div></div></div>
+<div class="summary-media-block image-right"><div class="summary-media-content"><h2 style=";font-size:clamp(22px,4.5vw,50px)!important;">Témoignages Séjours d’immersion</h2><p>Découvrez le témoignage d’une participante ayant vécu un mois au Kenya au plus près de la communauté, des enfants et du quotidien du projet AMKA.</p><button class="summary-more-btn" onclick="showSection('immersion-testimonials')" type="button">Témoignage immersion</button></div><div class="summary-media-image"><img alt="Témoignage séjour d’immersion AMKA" src="immersion_teaser_new.jpg"/></div></div></div>
 </section>
 <section class="page-section" id="testimonials">
 <div class="section-shell">
