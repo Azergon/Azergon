@@ -2885,6 +2885,1081 @@ body.mobile-nav-open{
     font-size:10px!important;
   }
 }
+
+
+/* --- v74 smartphone navigation refinements --- */
+@media (max-width:900px){
+
+  /* Dons & soutien slightly lower than the other section links */
+  #mobileNav .donate-cta-mobile,
+  #mobileNav [data-target="donations"]{
+    margin-top:10px !important;
+  }
+
+  /* Keep language module at the very bottom of the sidebar */
+  #mobileNav{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  #mobileNav .mobile-language-module{
+    margin-top:auto !important;
+    margin-bottom:3px !important;
+    padding-bottom:0 !important;
+  }
+
+  /* À propos: circular history image before descriptive text */
+  #about .about-history-row{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  #about .about-history-media{
+    order:1 !important;
+    width:100% !important;
+    display:flex !important;
+    justify-content:center !important;
+    margin:0 auto 18px !important;
+  }
+
+  #about .about-history-copy{
+    order:2 !important;
+    width:100% !important;
+  }
+
+  #about .about-history-image,
+  #about .history-image,
+  #about img[src*="about_history_round"]{
+    display:block !important;
+    margin:0 auto !important;
+  }
+}
+
+/* --- v75 smartphone donation spacing update --- */
+@media (max-width: 900px) {
+  #mobileNav .donate-cta-mobile,
+  #mobileNav [data-target="donations"] {
+    margin-top: 75px !important;
+  }
+}
+
+
+/* --- v77 smartphone typography: smaller, tighter, more compact --- */
+@media (max-width: 900px){
+
+  body{
+    font-size:14px !important;
+    line-height:1.45 !important;
+  }
+
+  .section-shell{
+    padding-top:24px !important;
+    padding-bottom:34px !important;
+  }
+
+  .section-intro{
+    margin-bottom:18px !important;
+  }
+
+  .section-intro h2,
+  #projects .projects-custom > h2,
+  #partners .section-shell > h2,
+  #gallery .section-shell > h2,
+  #contact .section-shell > h2,
+  #donations .section-shell > h2,
+  #testimonials .section-shell > h2,
+  #immersion-testimonials .section-shell > h2{
+    font-size:clamp(26px,7.6vw,36px) !important;
+    line-height:1.05 !important;
+    margin-bottom:12px !important;
+    letter-spacing:-.02em !important;
+  }
+
+  h3{
+    line-height:1.15 !important;
+  }
+
+  p,
+  li,
+  blockquote,
+  .story-copy p,
+  .projects-custom p,
+  .mission-panel p,
+  .profile p,
+  .testimonial-rich p,
+  .immersion-testimonial p,
+  .summary-media-content p,
+  .contact-simple-text p,
+  .donation-intro p{
+    font-size:14px !important;
+    line-height:1.48 !important;
+  }
+
+  p{
+    margin-top:0 !important;
+    margin-bottom:10px !important;
+  }
+
+  #home .hero-copy p,
+  #home .hero-copy .hero-description{
+    font-size:14px !important;
+    line-height:1.48 !important;
+    margin-top:14px !important;
+  }
+
+  #home .hero-copy .tagline{
+    font-size:22px !important;
+    line-height:1.1 !important;
+    margin-top:8px !important;
+  }
+
+  #home .hero-actions{
+    margin-top:16px !important;
+  }
+
+  #home .hero-actions button,
+  .summary-more-btn,
+  .compact-contact-form button,
+  .copy-transfer-btn{
+    font-size:13px !important;
+    padding:9px 13px !important;
+    min-height:40px !important;
+  }
+
+  .profile h2,
+  .testimonial-rich h3,
+  .summary-media-content h2,
+  #about .summary-wrap-card h3{
+    font-size:22px !important;
+    line-height:1.1 !important;
+    margin-bottom:10px !important;
+  }
+
+  .profile,
+  .testimonial-rich{
+    padding-top:18px !important;
+    padding-bottom:18px !important;
+    gap:14px !important;
+  }
+
+  .about-quote{
+    font-size:16px !important;
+    line-height:1.4 !important;
+    margin-bottom:18px !important;
+  }
+
+  #about .about-history-copy h3{
+    font-size:24px !important;
+    margin-bottom:10px !important;
+  }
+
+  .summary-media-block{
+    margin-top:30px !important;
+    padding-top:0 !important;
+  }
+
+  .summary-media-content p{
+    margin-bottom:12px !important;
+  }
+
+  .story-grid,
+  .projects-photo-grid{
+    gap:10px !important;
+  }
+
+  .compact-field-row label{
+    font-size:13px !important;
+  }
+
+  .compact-field-row input,
+  .compact-field-row textarea{
+    font-size:14px !important;
+    padding:10px 11px !important;
+  }
+
+  .transfer-field-stack > label{
+    font-size:13px !important;
+    margin-bottom:5px !important;
+  }
+
+  .beneficiary-address,
+  .communication-box,
+  .transfer-value-row{
+    font-size:13px !important;
+    line-height:1.4 !important;
+  }
+
+  .video-caption{
+    font-size:11px !important;
+    line-height:1.3 !important;
+  }
+
+  .video-caption strong{
+    font-size:12px !important;
+  }
+
+  #mobileNav > button,
+  #mobileNav .mobile-dropdown-head > button:first-child{
+    font-size:14px !important;
+    min-height:42px !important;
+    padding-top:9px !important;
+    padding-bottom:9px !important;
+  }
+
+  #mobileNav .mobile-submenu button{
+    font-size:13px !important;
+    min-height:38px !important;
+    padding-top:8px !important;
+    padding-bottom:8px !important;
+  }
+
+  #mobileNav .mobile-nav-title{
+    font-size:18px !important;
+  }
+
+  #mobileNav .mobile-language-option{
+    font-size:10px !important;
+    padding:6px 8px !important;
+  }
+}
+
+/* iPhone SE and smaller */
+@media (max-width: 375px){
+
+  body{
+    font-size:13px !important;
+  }
+
+  p,
+  li,
+  blockquote,
+  .story-copy p,
+  .projects-custom p,
+  .mission-panel p,
+  .profile p,
+  .testimonial-rich p,
+  .immersion-testimonial p,
+  .summary-media-content p,
+  .contact-simple-text p,
+  .donation-intro p{
+    font-size:13px !important;
+    line-height:1.44 !important;
+  }
+
+  .section-intro h2,
+  #projects .projects-custom > h2,
+  #partners .section-shell > h2,
+  #gallery .section-shell > h2,
+  #contact .section-shell > h2,
+  #donations .section-shell > h2,
+  #testimonials .section-shell > h2,
+  #immersion-testimonials .section-shell > h2{
+    font-size:27px !important;
+  }
+
+  .profile h2,
+  .testimonial-rich h3,
+  .summary-media-content h2,
+  #about .summary-wrap-card h3{
+    font-size:20px !important;
+  }
+
+  #about .about-history-copy h3{
+    font-size:22px !important;
+  }
+
+  #home .hero-copy p,
+  #home .hero-copy .hero-description{
+    font-size:13px !important;
+  }
+
+  #home .hero-copy .tagline{
+    font-size:20px !important;
+  }
+
+  #home .hero-actions button,
+  .summary-more-btn,
+  .compact-contact-form button,
+  .copy-transfer-btn{
+    font-size:12px !important;
+    min-height:38px !important;
+  }
+}
+
+
+/* --- v78: matte action links + shorter contact copy --- */
+
+/* Common black CTA buttons become more editorial / text-like */
+.hero-actions .primary,
+.summary-more-btn,
+.contact-form button,
+.compact-contact-form button,
+.copy-transfer-btn,
+.nav-button-like,
+.donation-chip{
+  background:rgba(18,18,18,.82) !important;
+  color:#fff !important;
+  border:0 !important;
+  border-radius:4px !important;
+  box-shadow:none !important;
+  font-weight:700 !important;
+  letter-spacing:.01em !important;
+  transition:
+    color .20s ease,
+    background .20s ease,
+    transform .20s ease,
+    box-shadow .20s ease !important;
+}
+
+/* Less pill-like: compact rectangular text controls */
+.hero-actions .primary,
+.summary-more-btn{
+  padding:10px 14px !important;
+}
+
+/* Blue wave/hover effect */
+.hero-actions .primary:hover,
+.summary-more-btn:hover,
+.contact-form button:hover,
+.compact-contact-form button:hover,
+.copy-transfer-btn:hover,
+.nav-button-like:hover,
+.donation-chip:hover{
+  background:rgba(40,21,110,.10) !important;
+  color:#28156E !important;
+  box-shadow:inset 0 -2px 0 rgba(40,21,110,.85) !important;
+  transform:translateY(-1px) !important;
+}
+
+/* Keyboard focus, same visual language */
+.hero-actions .primary:focus-visible,
+.summary-more-btn:focus-visible,
+.contact-form button:focus-visible,
+.compact-contact-form button:focus-visible,
+.copy-transfer-btn:focus-visible,
+.nav-button-like:focus-visible,
+.donation-chip:focus-visible{
+  outline:2px solid rgba(40,21,110,.42) !important;
+  outline-offset:2px !important;
+}
+
+/* Smartphone: keep these controls compact */
+@media (max-width:900px){
+  .hero-actions .primary,
+  .summary-more-btn,
+  .contact-form button,
+  .compact-contact-form button,
+  .copy-transfer-btn,
+  .nav-button-like,
+  .donation-chip{
+    border-radius:3px !important;
+  }
+}
+
+
+/* --- v80: flat rectangular CTA geometry + language order FR NL EN --- */
+
+/* Same shape language as "Notre mission": no pill/rounded card treatment */
+#home .cta-projects-flat,
+.cta-donation-flat{
+  border-radius:4px !important;
+}
+
+/* "Voir les projets": preserve the white visual treatment */
+#home .cta-projects-flat{
+  background:rgba(255,255,255,.94) !important;
+  color:#171717 !important;
+  border:1px solid rgba(20,20,20,.18) !important;
+  box-shadow:none !important;
+}
+
+/* Donation CTA: preserve current red animated/effect styling, only flatten the shape */
+.cta-donation-flat,
+.desktop-nav .cta-donation-flat,
+#mobileNav .cta-donation-flat{
+  border-radius:4px !important;
+}
+
+/* Keep donation visual/effects from existing rules; only prevent pill geometry */
+@media (max-width:900px){
+  #home .cta-projects-flat,
+  #mobileNav .cta-donation-flat{
+    border-radius:3px !important;
+  }
+}
+
+
+/* --- v81 secret Stripe donation demo --- */
+.secret-donation-trigger{
+  cursor:pointer;
+  user-select:none;
+}
+.secret-stripe-block{
+  display:none;
+  margin:12px 0 18px;
+  padding:14px 0 4px;
+  border-top:1px solid rgba(40,21,110,.12);
+}
+.secret-stripe-block.is-visible{
+  display:block;
+  animation:amkaSecretReveal .32s ease both;
+}
+@keyframes amkaSecretReveal{
+  from{opacity:0;transform:translateY(-8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.secret-stripe-copy{
+  max-width:820px;
+  margin:0 0 12px!important;
+  font-size:14px;
+  line-height:1.5;
+}
+.stripe-secret-button,
+.stripe-demo-pay{
+  appearance:none;
+  border:0;
+  border-radius:4px;
+  padding:10px 14px;
+  background:rgba(18,18,18,.84);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  transition:background .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+.stripe-secret-button:hover,
+.stripe-demo-pay:hover{
+  background:rgba(40,21,110,.1);
+  color:#28156E;
+  box-shadow:inset 0 -2px 0 rgba(40,21,110,.85);
+  transform:translateY(-1px);
+}
+
+.stripe-demo-modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  z-index:3000;
+}
+.stripe-demo-modal.is-open{
+  display:flex;
+}
+.stripe-demo-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(9,7,18,.54);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+.stripe-demo-panel{
+  position:relative;
+  z-index:1;
+  width:min(560px,100%);
+  max-height:min(88vh,760px);
+  overflow:auto;
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 24px 80px rgba(0,0,0,.25);
+}
+.stripe-demo-close{
+  position:absolute;
+  right:12px;
+  top:10px;
+  width:36px;
+  height:36px;
+  border:0;
+  border-radius:50%;
+  background:#f2f0f8;
+  color:#28156E;
+  font-size:24px;
+  cursor:pointer;
+}
+.stripe-demo-panel h3{
+  margin:0 46px 8px 0;
+  color:#28156E;
+  font-size:24px;
+}
+.stripe-demo-note{
+  margin:0 0 16px!important;
+  font-size:13px;
+  line-height:1.45;
+  color:#555;
+}
+.stripe-demo-form{
+  display:grid;
+  gap:9px;
+}
+.stripe-demo-form label{
+  font-size:12px;
+  font-weight:700;
+  color:#333;
+}
+.stripe-demo-form input{
+  width:100%;
+  border:1px solid #d9d6e3;
+  border-radius:7px;
+  padding:10px 11px;
+  font-size:14px;
+  background:#fff;
+}
+.stripe-demo-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.stripe-demo-row > div{
+  display:grid;
+  gap:6px;
+}
+.stripe-fee-info{
+  margin:3px 0 0!important;
+  font-size:12px!important;
+  color:#666;
+}
+.stripe-demo-status{
+  min-height:22px;
+  font-size:13px;
+  font-weight:700;
+  color:#28156E;
+}
+.stripe-api-demo{
+  margin-top:18px;
+  border-top:1px solid #ece9f3;
+  padding-top:12px;
+}
+.stripe-api-demo summary{
+  cursor:pointer;
+  font-weight:700;
+  color:#28156E;
+}
+.stripe-api-demo pre{
+  margin:10px 0;
+  padding:12px;
+  background:#111;
+  color:#f5f5f5;
+  border-radius:8px;
+  overflow:auto;
+  font-size:11px;
+  line-height:1.45;
+}
+.stripe-api-warning{
+  font-size:12px!important;
+  color:#555;
+  margin:8px 0 0!important;
+}
+body.stripe-modal-open{
+  overflow:hidden;
+}
+
+@media(max-width:900px){
+  .secret-stripe-copy{
+    font-size:13px!important;
+  }
+  .stripe-demo-panel{
+    padding:18px 15px;
+    border-radius:10px;
+  }
+  .stripe-demo-panel h3{
+    font-size:20px!important;
+  }
+}
+@media(max-width:375px){
+  .stripe-demo-modal{padding:10px}
+  .stripe-demo-row{grid-template-columns:1fr}
+  .stripe-secret-button,
+  .stripe-demo-pay{
+    width:100%;
+    font-size:12px;
+  }
+}
+
+
+/* --- v82 Stripe production-style presentation --- */
+.secret-stripe-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:20px;
+}
+.stripe-icon-trigger{
+  border:0;
+  background:transparent;
+  padding:4px 2px;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition:transform .2s ease, opacity .2s ease;
+}
+.stripe-icon-trigger:hover{transform:translateY(-1px) scale(1.03)}
+.stripe-wordmark,
+.stripe-modal-wordmark{
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:800;
+  font-style:italic;
+  letter-spacing:-2px;
+  color:#635bff;
+  line-height:1;
+}
+.stripe-wordmark{
+  font-size:34px;
+}
+.stripe-modal-wordmark{
+  font-size:30px;
+}
+.stripe-demo-panel{
+  width:min(520px,100%) !important;
+  padding:24px !important;
+  border-radius:12px !important;
+  background:rgba(255,255,255,.985) !important;
+}
+.stripe-prod-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:4px 42px 18px;
+}
+.stripe-amka-logo{
+  width:72px;
+  height:58px;
+  object-fit:contain;
+}
+.stripe-header-sep{
+  color:#aaa;
+  font-size:18px;
+}
+.stripe-demo-panel h3{
+  text-align:center;
+  margin:0 !important;
+  font-size:25px !important;
+}
+.stripe-prod-subtitle{
+  text-align:center;
+  color:#747474;
+  font-size:13px !important;
+  margin:5px 0 18px !important;
+}
+.stripe-prod-form{
+  gap:13px !important;
+}
+.stripe-field-group{
+  display:grid;
+  gap:6px;
+}
+.stripe-field-group label{
+  font-size:12px;
+  font-weight:700;
+  color:#333;
+}
+.stripe-input-shell{
+  position:relative;
+  display:flex;
+  align-items:center;
+  min-height:46px;
+  border:1px solid #ddd9e9;
+  border-radius:7px;
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 1px 2px rgba(20,20,20,.03);
+}
+.stripe-input-shell:focus-within{
+  border-color:#635bff;
+  box-shadow:0 0 0 3px rgba(99,91,255,.10);
+}
+.stripe-input-shell input{
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+  flex:1 1 auto;
+  min-width:0;
+  padding:11px 10px 11px 4px !important;
+  background:transparent !important;
+}
+.stripe-field-icon{
+  width:36px;
+  text-align:center;
+  font-size:14px;
+  color:#6e6a7c;
+  flex:0 0 36px;
+}
+.stripe-field-suffix,
+.stripe-card-mark{
+  font-size:11px;
+  color:#777;
+  font-weight:700;
+  padding-right:11px;
+  flex:0 0 auto;
+}
+.stripe-card-mark{
+  color:#1a1f71;
+  font-style:italic;
+  font-size:10px;
+}
+.stripe-security-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  font-size:11px;
+  color:#727272;
+  padding-top:2px;
+}
+.stripe-demo-pay{
+  width:100%;
+  min-height:46px;
+  border-radius:6px !important;
+  background:#635bff !important;
+  color:#fff !important;
+  font-size:14px;
+  letter-spacing:.01em;
+}
+.stripe-demo-pay:hover{
+  background:#5147f0 !important;
+  color:#fff !important;
+  box-shadow:none !important;
+}
+.stripe-demo-status{
+  text-align:center;
+  min-height:18px !important;
+  font-size:12px !important;
+}
+.stripe-api-demo,
+.stripe-demo-note,
+.stripe-fee-info{
+  display:none !important;
+}
+@media(max-width:900px){
+  .secret-stripe-row{
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:12px;
+  }
+  .stripe-wordmark{font-size:28px}
+  .stripe-demo-panel{padding:18px 14px !important}
+  .stripe-amka-logo{width:62px;height:50px}
+}
+@media(max-width:375px){
+  .secret-stripe-row{
+    grid-template-columns:minmax(0,1fr) 74px;
+  }
+  .stripe-wordmark{font-size:24px}
+}
+
+
+/* --- v83 Stripe visual + result popups --- */
+.secret-stripe-row{
+  grid-template-columns:minmax(0,1fr) minmax(190px, 32%) !important;
+  gap:24px !important;
+}
+.stripe-payment-visual{
+  width:100%;
+  min-height:110px;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center;
+  padding:8px !important;
+}
+.stripe-logo-stack{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+}
+.stripe-wordmark{
+  font-size:42px !important;
+  letter-spacing:-2.5px !important;
+  filter:drop-shadow(0 5px 14px rgba(99,91,255,.18));
+}
+.stripe-payment-badges{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.stripe-payment-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:11px;
+  font-weight:700;
+  color:#4a4670;
+  background:rgba(99,91,255,.08);
+  border:1px solid rgba(99,91,255,.13);
+  border-radius:999px;
+  padding:5px 8px;
+}
+.badge-icon{
+  font-size:12px;
+  line-height:1;
+}
+.pulse-icon{
+  animation:stripePulse 1.25s ease-in-out infinite;
+}
+@keyframes stripePulse{
+  0%,100%{transform:scale(1);opacity:.75}
+  50%{transform:scale(1.2);opacity:1}
+}
+
+.stripe-outcome-modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  z-index:3200;
+}
+.stripe-outcome-modal.is-open{
+  display:flex;
+}
+.stripe-outcome-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(9,7,18,.56);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+.stripe-outcome-card{
+  position:relative;
+  z-index:1;
+  width:min(430px,100%);
+  background:#fff;
+  border-radius:14px;
+  padding:28px 24px 22px;
+  text-align:center;
+  box-shadow:0 24px 80px rgba(0,0,0,.26);
+}
+.stripe-outcome-icon{
+  width:66px;
+  height:66px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 14px;
+  font-size:30px;
+  font-weight:800;
+}
+.stripe-outcome-icon.success{
+  background:rgba(29,167,105,.12);
+  color:#16885d;
+}
+.stripe-outcome-icon.failure{
+  background:rgba(205,53,53,.10);
+  color:#b82f2f;
+}
+.stripe-outcome-card h3{
+  margin:0 0 8px;
+  color:#28156E;
+  font-size:23px;
+}
+.stripe-outcome-text{
+  margin:0 0 18px !important;
+  color:#555;
+  font-size:14px;
+  line-height:1.5;
+}
+.stripe-outcome-actions{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+.stripe-outcome-actions button{
+  border:0;
+  border-radius:5px;
+  min-height:42px;
+  padding:10px 16px;
+  cursor:pointer;
+  font-weight:700;
+}
+.stripe-outcome-back{
+  background:#efedf6;
+  color:#28156E;
+}
+.stripe-outcome-retry{
+  background:#635bff;
+  color:#fff;
+}
+.stripe-outcome-retry:hover{
+  background:#5147f0;
+}
+@media(max-width:900px){
+  .secret-stripe-row{
+    grid-template-columns:minmax(0,1fr) minmax(140px, 34%) !important;
+    gap:14px !important;
+  }
+  .stripe-wordmark{font-size:34px !important}
+}
+@media(max-width:520px){
+  .secret-stripe-row{
+    grid-template-columns:minmax(0,1fr) 120px !important;
+    gap:10px !important;
+  }
+  .stripe-payment-visual{
+    min-height:96px;
+  }
+  .stripe-wordmark{font-size:28px !important}
+  .stripe-payment-badges{
+    flex-direction:column;
+    gap:5px;
+  }
+  .stripe-payment-badge{
+    font-size:10px;
+    padding:4px 6px;
+  }
+  .stripe-outcome-actions{
+    flex-direction:column;
+  }
+  .stripe-outcome-actions button{
+    width:100%;
+  }
+}
+
+
+/* --- v84 video volume + icon rings + gallery close cleanup --- */
+
+/* Restore subtle grey rings around video controls */
+.video-control-btn{
+  border:1px solid rgba(170,170,170,.55) !important;
+  background:rgba(20,20,20,.34) !important;
+  box-shadow:0 2px 8px rgba(0,0,0,.18) !important;
+}
+.video-control-btn:hover{
+  border-color:rgba(205,205,205,.78) !important;
+}
+
+/* Volume control */
+.amka-volume-wrap{
+  flex:0 0 84px;
+  display:flex;
+  align-items:center;
+  pointer-events:auto;
+}
+.amka-volume-bar{
+  -webkit-appearance:none;
+  appearance:none;
+  width:100%;
+  height:5px;
+  border-radius:999px;
+  outline:none;
+  cursor:pointer;
+  background:
+    linear-gradient(
+      90deg,
+      #fff 0%,
+      #fff var(--volume,100%),
+      rgba(255,255,255,.28) var(--volume,100%),
+      rgba(255,255,255,.28) 100%
+    );
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);
+}
+.amka-volume-bar::-webkit-slider-runnable-track{
+  height:5px;
+  background:transparent;
+  border-radius:999px;
+}
+.amka-volume-bar::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance:none;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#fff;
+  border:0;
+  margin-top:-3.5px;
+  box-shadow:0 1px 5px rgba(0,0,0,.28);
+}
+.amka-volume-bar::-moz-range-track{
+  height:5px;
+  background:transparent;
+  border-radius:999px;
+}
+.amka-volume-bar::-moz-range-progress{
+  height:5px;
+  background:#fff;
+  border-radius:999px;
+}
+.amka-volume-bar::-moz-range-thumb{
+  width:12px;
+  height:12px;
+  border:0;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 1px 5px rgba(0,0,0,.28);
+}
+
+/* Close button in video player: subtle grey ring */
+.amka-video-player .video-close-btn,
+.amka-video-player .close-video-btn,
+.amka-video-player [aria-label*="Fermer"],
+.amka-video-player [aria-label*="Close"]{
+  border:1px solid rgba(170,170,170,.55) !important;
+  background:rgba(20,20,20,.34) !important;
+  box-shadow:0 2px 8px rgba(0,0,0,.18) !important;
+}
+
+/* Gallery lightbox close: no ring / no outline */
+.gallery-lightbox .gallery-lightbox-close,
+.gallery-lightbox .lightbox-close,
+.gallery-lightbox button[aria-label*="Fermer"],
+.gallery-lightbox button[aria-label*="Close"],
+#galleryLightbox .gallery-lightbox-close,
+#galleryLightbox .lightbox-close,
+#galleryLightbox button[aria-label*="Fermer"],
+#galleryLightbox button[aria-label*="Close"]{
+  border:0 !important;
+  outline:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  border-radius:0 !important;
+}
+
+/* keep the X readable without a button contour */
+.gallery-lightbox .gallery-lightbox-close,
+.gallery-lightbox .lightbox-close,
+#galleryLightbox .gallery-lightbox-close,
+#galleryLightbox .lightbox-close{
+  color:#fff !important;
+  text-shadow:0 2px 8px rgba(0,0,0,.55);
+}
+
+@media (max-width:760px){
+  .amka-volume-wrap{
+    flex-basis:68px;
+  }
+}
+
+
+/* --- v85 smartphone about image + plain Stripe security indicators --- */
+
+/* Smartphone: smaller circular history image */
+@media (max-width: 800px) {
+  #about .about-history-media img {
+    width: min(157px, 70vw) !important;
+  }
+}
+
+/* Stripe "Sécurisé" / "Instantané": icon + text only, no card/background/border */
+.stripe-payment-badge{
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  padding:0 !important;
+  box-shadow:none !important;
+  color:#4a4670 !important;
+  gap:5px !important;
+}
+.stripe-payment-badges{
+  gap:14px !important;
+}
 </style>
 </head>
 <body><script>
@@ -3051,7 +4126,7 @@ body.mobile-nav-open{
 </div>
 <button data-target="partners">Nos partenaires</button><button data-target="gallery">Galerie</button>
 <button data-target="contact">Contact</button>
-<button aria-label="Dons &amp; soutien" class="donate-cta" onclick="showSection('donations')" type="button">Dons &amp; soutien</button><div aria-label="Langues" class="language-module"><span aria-label="Français" class="language-option" data-lang="fr" role="button" tabindex="0" title="Français">FR</span><span aria-label="English" class="language-option" data-lang="en" role="button" tabindex="0" title="Anglais">ANG</span><span aria-label="Nederlands" class="language-option" data-lang="nl" role="button" tabindex="0" title="Néerlandais">NL</span></div>
+<button aria-label="Dons &amp; soutien" class="donate-cta cta-donation-flat" onclick="showSection('donations')" type="button">Dons &amp; soutien</button><div aria-label="Langues" class="language-module"><span aria-label="Français" class="language-option" data-lang="fr" role="button" tabindex="0" title="Français">FR</span><span aria-label="Nederlands" class="language-option" data-lang="nl" role="button" tabindex="0" title="Néerlandais">NL</span><span aria-label="English" class="language-option" data-lang="en" role="button" tabindex="0" title="Anglais">EN</span></div>
 </nav>
 <button aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle" onclick="toggleMobileMenu()" type="button"><span></span><span></span><span></span></button>
 </div>
@@ -3079,7 +4154,7 @@ body.mobile-nav-open{
 </div>
 <button data-target="partners">Nos partenaires</button><button data-target="gallery">Galerie</button>
 <button data-target="contact">Contact</button>
-<button aria-label="Dons &amp; soutien" class="donate-cta donate-cta-mobile" onclick="showSection('donations')" type="button">Dons &amp; soutien</button><div aria-label="Langues" class="mobile-language-module"><span aria-label="Français" class="mobile-language-option" data-lang="fr" role="button" tabindex="0">FR</span><span aria-label="English" class="mobile-language-option" data-lang="en" role="button" tabindex="0">ANG</span><span aria-label="Nederlands" class="mobile-language-option" data-lang="nl" role="button" tabindex="0">NL</span></div>
+<button aria-label="Dons &amp; soutien" class="donate-cta donate-cta-mobile cta-donation-flat" onclick="showSection('donations')" type="button">Dons &amp; soutien</button><div aria-label="Langues" class="mobile-language-module"><span aria-label="Français" class="mobile-language-option" data-lang="fr" role="button" tabindex="0">FR</span><span aria-label="Nederlands" class="mobile-language-option" data-lang="nl" role="button" tabindex="0">NL</span><span aria-label="English" class="mobile-language-option" data-lang="en" role="button" tabindex="0">EN</span></div>
 </nav>
 </header><div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="toggleMobileMenu(false)"></div>
 <main>
@@ -3092,10 +4167,10 @@ body.mobile-nav-open{
 <p>Un projet humain qui accompagne des enfants et des familles au Kenya à travers la santé, l’éducation, les repas, le soutien psychosocial et des initiatives concrètes sur le terrain.</p>
 <div class="hero-actions">
 <button class="primary" onclick="showSection('mission')">Notre mission</button>
-<button class="secondary" onclick="showSection('projects')">Voir les projets</button>
+<button class="secondary cta-projects-flat" onclick="showSection('projects')">Voir les projets</button>
 </div>
 </div>
-<div class="hero-video-wrap"><div class="amka-video-player"><video class="amka-local-video" id="amkaLocalVideo" playsinline="" poster="video_poster_custom.png" preload="metadata"><source src="AMKA_ Ritchie Vermeire.mp4" type="video/mp4"/>Votre navigateur ne prend pas en charge la lecture vidéo.</video><div class="amka-video-controls"><button aria-label="Lire la vidéo" class="video-control-btn" id="amkaPlayBtn" type="button">▶</button><button aria-label="Couper ou activer le son" class="video-control-btn" id="amkaMuteBtn" type="button">🔊</button><div class="amka-seek-wrap"><input aria-label="Avancer ou reculer dans la vidéo" class="amka-seek-bar" id="amkaSeekBar" max="100" min="0" step="0.1" type="range" value="0"/></div><button aria-label="Afficher en plein écran" class="video-control-btn" id="amkaFullscreenBtn" type="button">⛶</button></div></div><div class="video-caption"><strong>AMKA — Ritchie Vermeire</strong><span>Chanson créée en soutien au projet</span></div></div>
+<div class="hero-video-wrap"><div class="amka-video-player"><video class="amka-local-video" id="amkaLocalVideo" playsinline="" poster="video_poster_custom.png" preload="metadata"><source src="AMKA_ Ritchie Vermeire.mp4" type="video/mp4"/>Votre navigateur ne prend pas en charge la lecture vidéo.</video><div class="amka-video-controls"><button aria-label="Lire la vidéo" class="video-control-btn" id="amkaPlayBtn" type="button">▶</button><button aria-label="Couper ou activer le son" class="video-control-btn" id="amkaMuteBtn" type="button">🔊</button><div class="amka-volume-wrap"><input aria-label="Volume" class="amka-volume-bar" id="amkaVolumeBar" max="1" min="0" step="0.01" type="range" value="1"/></div><div class="amka-seek-wrap"><input aria-label="Avancer ou reculer dans la vidéo" class="amka-seek-bar" id="amkaSeekBar" max="100" min="0" step="0.1" type="range" value="0"/></div><button aria-label="Afficher en plein écran" class="video-control-btn" id="amkaFullscreenBtn" type="button">⛶</button></div></div><div class="video-caption"><strong>AMKA — Ritchie Vermeire</strong><span>Chanson créée en soutien au projet</span></div></div>
 </div>
 </div>
 </section>
@@ -3235,8 +4310,8 @@ Votre générosité nous a aidés à nous préparer pour notre vie à venir. Mer
 <section class="page-section" id="donations">
 <div class="section-shell">
 <div class="donations-panel">
-<h2>Soutenir AMKA</h2>
-<p>Votre soutien permet à AMKA de poursuivre ses actions en faveur des enfants et des familles accompagnés au Kenya, notamment dans les domaines de l’éducation, de la santé, de l’alimentation et de l’accompagnement au quotidien. Les dons d’au moins <strong>40 €</strong> peuvent donner droit à un avantage fiscal de <strong>45 %</strong>, selon les conditions applicables. </p><span class="donation-tax-links"><a href="https://finances.belgium.be/fr/asbl/dons/attestations" rel="noopener" target="_blank">Conditions et attestation fiscale</a><span> · </span><a href="https://finances.belgium.be/fr/E-services/Tax-on-web/" rel="noopener" target="_blank">Comment déclarer via Tax-on-web</a></span>
+<h2 class="secret-donation-trigger" id="secretDonationTrigger">Soutenir AMKA</h2><div aria-hidden="true" class="secret-stripe-block" id="secretStripeBlock"><div class="secret-stripe-row"><p class="secret-stripe-copy" data-i18n="stripe_secret_copy">Vous pouvez également effectuer un don instantané via notre partenaire de paiement Stripe. Le paiement est traité directement par Stripe : AMKA ne reçoit ni ne conserve vos données de carte. Les transactions sont chiffrées et sécurisées par Stripe. Des frais de traitement peuvent s’appliquer selon le moyen de paiement et le pays ; dans une intégration réelle, le montant exact des frais est affiché de manière transparente avant la validation du paiement.</p><button aria-label="Ouvrir le paiement Stripe" class="stripe-icon-trigger stripe-payment-visual" id="openStripeDemo" type="button"><div class="stripe-logo-stack"><span aria-hidden="true" class="stripe-wordmark">stripe</span><div class="stripe-payment-badges"><span class="stripe-payment-badge"><span aria-hidden="true" class="badge-icon">🔒</span><span data-i18n="stripe_badge_secure">Sécurisé</span></span><span class="stripe-payment-badge"><span aria-hidden="true" class="badge-icon pulse-icon">⚡</span><span data-i18n="stripe_badge_instant">Instantané</span></span></div></div></button></div></div>
+<p>Votre soutien permet à AMKA de poursuivre ses actions en faveur des enfants et des familles accompagnés au Kenya, notamment dans les domaines de l’éducation, de la santé, de l’alimentation et de l’accompagnement au quotidien. Les dons d’au moins <strong>40 €</strong> peuvent donner droit à un avantage fiscal de <strong>45 %</strong>, selon les conditions applicables. </p><span class="donation-tax-links"><a href="https://finances.belgium.be/fr/asbl/dons/attestations" id="taxCertificateLink" rel="noopener" target="_blank">Conditions et attestation fiscale</a><span> · </span><a href="https://finances.belgium.be/fr/E-services/Tax-on-web/" id="taxOnWebLink" rel="noopener" target="_blank">Comment déclarer via Tax-on-web</a></span>
 <div class="transfer-slip simplified-slip">
 <div class="transfer-field"><div class="transfer-field-stack"><label>Compte bénéficiaire (IBAN)</label><div class="transfer-value-row"><div class="boxes iban filled"><span>B</span><span>E</span><span>8</span><span>4</span><span>4</span><span>3</span><span>5</span><span>8</span><span>0</span><span>3</span><span>4</span><span>1</span><span>0</span><span>1</span><span>5</span><span>9</span></div><span class="copy-inline-wrap"><button aria-label="Copier" class="copy-transfer-btn" data-copy="BE84 4358 0341 0159" type="button"><span aria-hidden="true" class="copy-icon">⧉</span><span>Copier</span></button></span></div></div></div>
 <div class="transfer-field"><div class="transfer-field-stack"><label>BIC bénéficiaire</label><div class="transfer-value-row"><div class="boxes bic filled"><span>K</span><span>R</span><span>E</span><span>D</span><span>B</span><span>E</span><span>B</span><span>B</span></div><span class="copy-inline-wrap"><button aria-label="Copier" class="copy-transfer-btn" data-copy="KREDBEBB" type="button"><span aria-hidden="true" class="copy-icon">⧉</span><span>Copier</span></button></span></div></div></div>
@@ -3247,8 +4322,8 @@ Clos André Rappe 8
 </div>
 </div>
 </div>
-</section>
-<section class="page-section" id="contact"><div class="section-shell"><div class="contact-page"><div class="contact-info-bar"><div class="contact-info-text contact-simple-text"><h2>Contact</h2><p>Nous restons toujours accessibles par e-mail pour toute question concernant AMKA, les séjours d’immersion, les partenariats, les dons ou plus largement les actions que nous menons auprès des enfants et des familles accompagnés au Kenya. N’hésitez pas à nous écrire si vous souhaitez mieux comprendre le projet, obtenir des informations pratiques avant un séjour, proposer une collaboration, devenir partenaire, soutenir une initiative précise ou simplement échanger avec notre équipe. Nous essayons de répondre de manière claire et personnalisée afin de vous orienter vers les informations les plus utiles selon votre demande.</p><p>Vous pouvez nous écrire à <a class="contact-text-link" href="mailto:info@amkakenya.be">info@amkakenya.be</a>. Vous pouvez également consulter notre <a class="facebook-inline-link" href="https://www.facebook.com/share/15kxPLGrN1/" rel="noopener" target="_blank"><span>page Facebook</span></a> pour suivre les actualités et les activités du projet.</p></div></div><form class="contact-form compact-contact-form" id="contactForm"><div class="compact-field-row"><label for="name">Nom</label><input id="name" required="" type="text"/></div><div class="compact-field-row"><label for="email">Adresse e-mail</label><input id="email" required="" type="email"/></div><div class="compact-field-row"><label for="phone">Numéro de contact</label><input id="phone" placeholder="Optionnel" type="tel"/></div><div class="compact-field-row"><label for="subject">Sujet</label><input id="subject" type="text"/></div><div class="compact-field-row compact-field-message"><label for="message">Message</label><textarea id="message" required=""></textarea></div><div class="contact-submit-wrap"><button type="submit">Envoyer</button></div></form></div></div></section>
+</section><div aria-hidden="true" class="stripe-demo-modal" id="stripeDemoModal"><div class="stripe-demo-backdrop" data-close-stripe="true"></div><div aria-labelledby="stripeDemoTitle" aria-modal="true" class="stripe-demo-panel" role="dialog"><button aria-label="Fermer" class="stripe-demo-close" id="closeStripeDemo" type="button">×</button><div class="stripe-prod-header"><img alt="AMKA" class="stripe-amka-logo" src="logo.png"/><span class="stripe-header-sep">×</span><div aria-label="Stripe" class="stripe-modal-wordmark">stripe</div></div><h3 data-i18n="stripe_demo_title" id="stripeDemoTitle">Soutenir AMKA</h3><p class="stripe-prod-subtitle" data-i18n="stripe_demo_note">Paiement sécurisé</p><form class="stripe-demo-form stripe-prod-form" id="stripeDemoForm"><div class="stripe-field-group"><label data-i18n="stripe_amount_label" for="stripeAmount">Montant du don</label><div class="stripe-input-shell"><span aria-hidden="true" class="stripe-field-icon">€</span><input id="stripeAmount" min="1" name="amount" required="required" step="1" type="number" value="40"/><span class="stripe-field-suffix">EUR</span></div></div><div class="stripe-field-group"><label for="stripeName">Nom</label><div class="stripe-input-shell"><span aria-hidden="true" class="stripe-field-icon">👤</span><input id="stripeName" placeholder="Votre nom" required="required" type="text"/></div></div><div class="stripe-field-group"><label for="stripeEmail">E-mail</label><div class="stripe-input-shell"><span aria-hidden="true" class="stripe-field-icon">✉</span><input id="stripeEmail" placeholder="vous@email.com" required="required" type="email"/></div></div><div class="stripe-field-group"><label data-i18n="stripe_card_label" for="stripeTestCard">Carte</label><div class="stripe-input-shell"><span aria-hidden="true" class="stripe-field-icon">▣</span><input id="stripeTestCard" readonly="readonly" type="text" value="4242 4242 4242 4242"/><span class="stripe-card-mark">VISA</span></div></div><div class="stripe-demo-row"><div class="stripe-field-group"><label for="stripeExpiry">Expiration</label><div class="stripe-input-shell"><span aria-hidden="true" class="stripe-field-icon">◷</span><input id="stripeExpiry" readonly="readonly" type="text" value="12/34"/></div></div><div class="stripe-field-group"><label for="stripeCvc">CVC</label><div class="stripe-input-shell"><span aria-hidden="true" class="stripe-field-icon">🔒</span><input id="stripeCvc" readonly="readonly" type="text" value="123"/></div></div></div><div class="stripe-security-row"><span aria-hidden="true">🔒</span><span data-i18n="stripe_secure_line">Paiement sécurisé par Stripe</span></div><button class="stripe-demo-pay" data-i18n="stripe_demo_pay" type="submit">Payer 40 €</button><div aria-live="polite" class="stripe-demo-status" id="stripeDemoStatus"></div></form></div></div>
+<section class="page-section" id="contact"><div class="section-shell"><div class="contact-page"><div class="contact-info-bar"><div class="contact-info-text contact-simple-text"><h2>Contact</h2><p>Nous restons accessibles par e-mail pour toute question concernant AMKA, les séjours d’immersion, les partenariats, les dons ou nos actions au Kenya. N’hésitez pas à nous écrire pour mieux comprendre le projet, préparer un séjour, proposer une collaboration, devenir partenaire ou soutenir une initiative. Nous vous répondrons de manière claire et personnalisée selon votre demande.</p><p>Vous pouvez nous écrire à <a class="contact-text-link" href="mailto:info@amkakenya.be">info@amkakenya.be</a>. Vous pouvez également consulter notre <a class="facebook-inline-link" href="https://www.facebook.com/share/15kxPLGrN1/" rel="noopener" target="_blank"><span>page Facebook</span></a> pour suivre les actualités et les activités du projet.</p></div></div><form class="contact-form compact-contact-form" id="contactForm"><div class="compact-field-row"><label for="name">Nom</label><input id="name" required="" type="text"/></div><div class="compact-field-row"><label for="email">Adresse e-mail</label><input id="email" required="" type="email"/></div><div class="compact-field-row"><label for="phone">Numéro de contact</label><input id="phone" placeholder="Optionnel" type="tel"/></div><div class="compact-field-row"><label for="subject">Sujet</label><input id="subject" type="text"/></div><div class="compact-field-row compact-field-message"><label for="message">Message</label><textarea id="message" required=""></textarea></div><div class="contact-submit-wrap"><button type="submit">Envoyer</button></div></form></div></div></section>
 </main>
 <footer class="site-footer">
 <div class="foot-top">
@@ -3375,6 +4450,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const video = document.getElementById('amkaLocalVideo');
   const playBtn = document.getElementById('amkaPlayBtn');
   const muteBtn = document.getElementById('amkaMuteBtn');
+  const volumeBar = document.getElementById('amkaVolumeBar');
   const fsBtn = document.getElementById('amkaFullscreenBtn');
   const seekBar = document.getElementById('amkaSeekBar');
 
@@ -3389,6 +4465,12 @@ document.addEventListener('DOMContentLoaded', function(){
   function updateMuteButton(){
     if (!muteBtn) return;
     muteBtn.textContent = (video.muted || video.volume === 0) ? '🔇' : '🔊';
+  }
+  function updateVolumeBar(){
+    if (!volumeBar) return;
+    const value = video.muted ? 0 : video.volume;
+    volumeBar.value = value;
+    volumeBar.style.setProperty('--volume', (value * 100) + '%');
   }
 
   function updateSeekBar(){
@@ -3425,7 +4507,21 @@ document.addEventListener('DOMContentLoaded', function(){
   muteBtn?.addEventListener('click', function(){
     video.muted = !video.muted;
     updateMuteButton();
+    updateVolumeBar();
   });
+  if (volumeBar){
+    volumeBar.addEventListener('input', function(){
+      const value = Math.max(0, Math.min(1, parseFloat(volumeBar.value || '0')));
+      video.volume = value;
+      video.muted = value === 0;
+      updateMuteButton();
+      updateVolumeBar();
+    });
+    video.addEventListener('volumechange', function(){
+      updateMuteButton();
+      updateVolumeBar();
+    });
+  }
 
   if (seekBar) {
     const seekTo = function(){
@@ -3452,6 +4548,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   updatePlayButton();
   updateMuteButton();
+  updateVolumeBar();
   updateSeekBar();
 });
 </script><script id="amka-i18n">
@@ -3502,6 +4599,28 @@ document.addEventListener('DOMContentLoaded', function(){
   function setLanguage(lang){
     if(!['fr','en','nl'].includes(lang)) lang='fr';
     window.currentLang = lang;
+
+    // Switch official Belgian Finance tax links with the selected site language.
+    const taxCertificateLink = document.getElementById('taxCertificateLink');
+    const taxOnWebLink = document.getElementById('taxOnWebLink');
+
+    const taxUrls = {
+      fr: {
+        certificate: 'https://finances.belgium.be/fr/asbl/dons/attestations',
+        taxOnWeb: 'https://finances.belgium.be/fr/E-services/Tax-on-web/'
+      },
+      nl: {
+        certificate: 'https://financien.belgium.be/nl/vzws/giften/attesten',
+        taxOnWeb: 'https://financien.belgium.be/nl/E-services/Tax-on-web'
+      },
+      en: {
+        certificate: 'https://finance.belgium.be/en/npo',
+        taxOnWeb: 'https://finance.belgium.be/en/contact'
+      }
+    };
+
+    if (taxCertificateLink) taxCertificateLink.href = taxUrls[lang].certificate;
+    if (taxOnWebLink) taxOnWebLink.href = taxUrls[lang].taxOnWeb;
     document.documentElement.lang = lang;
     nodeKeys.forEach?.(()=>{}); // WeakMap has no iterator; nodes are translated below via DOM traversal
 
@@ -3532,7 +4651,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // language-independent compact labels requested by the site owner
     document.querySelectorAll('[data-lang="fr"]').forEach(el => el.textContent='FR');
-    document.querySelectorAll('[data-lang="en"]').forEach(el => el.textContent='ANG');
+    document.querySelectorAll('[data-lang="en"]').forEach(el => el.textContent='EN');
     document.querySelectorAll('[data-lang="nl"]').forEach(el => el.textContent='NL');
 
     // Update dynamic video aria labels after translation switches.
@@ -3562,5 +4681,214 @@ document.addEventListener('DOMContentLoaded', function(){
     setLanguage('fr');
   });
 })();
-</script></body>
+</script><script>
+document.addEventListener('DOMContentLoaded', function(){
+  const trigger = document.getElementById('secretDonationTrigger');
+  const block = document.getElementById('secretStripeBlock');
+  const modal = document.getElementById('stripeDemoModal');
+  const openBtn = document.getElementById('openStripeDemo');
+  const closeBtn = document.getElementById('closeStripeDemo');
+  const form = document.getElementById('stripeDemoForm');
+  const status = document.getElementById('stripeDemoStatus');
+  const feeInfo = document.getElementById('stripeFeeInfo');
+  const outcomeModal = document.getElementById('stripeOutcomeModal');
+  const outcomeIcon = document.getElementById('stripeOutcomeIcon');
+  const outcomeTitle = document.getElementById('stripeOutcomeTitle');
+  const outcomeText = document.getElementById('stripeOutcomeText');
+  const outcomeBack = document.getElementById('stripeOutcomeBack');
+  const outcomeRetry = document.getElementById('stripeOutcomeRetry');
+
+  if (!trigger || !block || !modal) return;
+
+  const copy = {
+    fr: {
+      stripe_secret_copy: "Vous pouvez également effectuer un don instantané via notre partenaire de paiement Stripe. Le paiement est traité directement par Stripe : AMKA ne reçoit ni ne conserve vos données de carte. Les transactions sont chiffrées et sécurisées par Stripe. Des frais de traitement peuvent s’appliquer selon le moyen de paiement et le pays ; dans une intégration réelle, le montant exact des frais est affiché de manière transparente avant la validation du paiement.",
+      stripe_secret_button: "Faire un don sécurisé via Stripe",
+      stripe_demo_title: "Soutenir AMKA",
+      stripe_demo_note: "Paiement sécurisé",
+      stripe_amount_label: "Montant du don (€)",
+      stripe_card_label: "Carte de test",
+      stripe_demo_pay: "Payer",
+      stripe_secure_line: "Paiement sécurisé par Stripe",
+      stripe_badge_secure: "Sécurisé",
+      stripe_badge_instant: "Instantané",
+      outcome_success_title: "Merci pour votre don",
+      outcome_success_text: "Votre don a bien été pris en compte. Merci sincèrement pour votre soutien à AMKA et aux actions menées auprès des enfants et des familles au Kenya.",
+      outcome_failure_title: "Le paiement a échoué",
+      outcome_failure_text: "Le paiement n’a pas pu être finalisé. Vous pouvez revenir au formulaire ou réessayer immédiatement.",
+      outcome_back: "Retour",
+      outcome_retry: "Réessayer",
+      stripe_api_summary: "Voir le principe d’intégration API",
+      stripe_api_warning: "Important : la clé secrète Stripe ne doit jamais être placée dans le HTML ou le JavaScript public. Une intégration réelle nécessite un backend sécurisé et l’utilisation des clés de test Stripe avant passage en production.",
+      processing: "Simulation du paiement…",
+      success: "Paiement test accepté — aucun débit réel n’a été effectué.",
+      fee: "Simulation : frais plateforme 0,00 € — aucun débit réel."
+    },
+    nl: {
+      stripe_secret_copy: "U kunt ook onmiddellijk doneren via onze betaalpartner Stripe. De betaling wordt rechtstreeks door Stripe verwerkt: AMKA ontvangt of bewaart uw kaartgegevens niet. Transacties worden door Stripe versleuteld en beveiligd. Verwerkingskosten kunnen variëren naargelang betaalmethode en land; bij een echte integratie worden de exacte kosten transparant weergegeven vóór de betaling wordt bevestigd.",
+      stripe_secret_button: "Veilig doneren via Stripe",
+      stripe_demo_title: "Steun AMKA",
+      stripe_demo_note: "Veilige betaling",
+      stripe_amount_label: "Donatiebedrag (€)",
+      stripe_card_label: "Testkaart",
+      stripe_demo_pay: "Betalen",
+      stripe_secure_line: "Veilige betaling via Stripe",
+      stripe_badge_secure: "Beveiligd",
+      stripe_badge_instant: "Direct",
+      outcome_success_title: "Bedankt voor uw donatie",
+      outcome_success_text: "Uw donatie is goed ontvangen. Hartelijk dank voor uw steun aan AMKA en onze activiteiten voor kinderen en gezinnen in Kenia.",
+      outcome_failure_title: "Betaling mislukt",
+      outcome_failure_text: "De betaling kon niet worden voltooid. U kunt teruggaan naar het formulier of meteen opnieuw proberen.",
+      outcome_back: "Terug",
+      outcome_retry: "Opnieuw proberen",
+      stripe_api_summary: "Bekijk het principe van de API-integratie",
+      stripe_api_warning: "Belangrijk: de geheime Stripe-sleutel mag nooit in openbare HTML of JavaScript worden geplaatst. Een echte integratie vereist een beveiligde backend en Stripe-testsleutels vóór productiegebruik.",
+      processing: "Testbetaling wordt gesimuleerd…",
+      success: "Testbetaling aanvaard — er is niets werkelijk gedebiteerd.",
+      fee: "Simulatie: platformkosten € 0,00 — geen echte afschrijving."
+    },
+    en: {
+      stripe_secret_copy: "You can also make an instant donation through our payment partner Stripe. Payments are processed directly by Stripe: AMKA does not receive or store your card details. Transactions are encrypted and secured by Stripe. Processing fees may vary depending on the payment method and country; in a real integration, the exact fees are shown transparently before the payment is confirmed.",
+      stripe_secret_button: "Donate securely with Stripe",
+      stripe_demo_title: "Support AMKA",
+      stripe_demo_note: "Secure payment",
+      stripe_amount_label: "Donation amount (€)",
+      stripe_card_label: "Test card",
+      stripe_demo_pay: "Pay",
+      stripe_secure_line: "Secure payment by Stripe",
+      stripe_badge_secure: "Secure",
+      stripe_badge_instant: "Instant",
+      outcome_success_title: "Thank you for your donation",
+      outcome_success_text: "Your donation has been received. Thank you sincerely for supporting AMKA and our work with children and families in Kenya.",
+      outcome_failure_title: "Payment failed",
+      outcome_failure_text: "The payment could not be completed. You can return to the form or try again immediately.",
+      outcome_back: "Back",
+      outcome_retry: "Try again",
+      stripe_api_summary: "View the API integration concept",
+      stripe_api_warning: "Important: the Stripe secret key must never be placed in public HTML or JavaScript. A real integration requires a secure backend and Stripe test keys before going live.",
+      processing: "Simulating payment…",
+      success: "Test payment accepted — no real charge was made.",
+      fee: "Simulation: platform fees €0.00 — no real charge."
+    }
+  };
+
+  function lang(){
+    return (window.currentLang || document.documentElement.lang || 'fr').toLowerCase().startsWith('nl')
+      ? 'nl'
+      : ((window.currentLang || document.documentElement.lang || 'fr').toLowerCase().startsWith('en') ? 'en' : 'fr');
+  }
+
+  function syncStripeText(){
+    const l = lang(), c = copy[l];
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      const key = el.getAttribute('data-i18n');
+      if (c[key]) el.textContent = c[key];
+    });
+    if (feeInfo) feeInfo.textContent = c.fee;
+    const amountInput = document.getElementById('stripeAmount');
+    const payButton = document.querySelector('.stripe-demo-pay');
+    if (payButton && amountInput) {
+      const symbol = lang()==='nl' ? '€' : '€';
+      const amount = parseFloat(amountInput.value || '0').toFixed(0);
+      const base = c.stripe_demo_pay || 'Pay';
+      payButton.textContent = base + ' ' + amount + ' ' + symbol;
+    }
+  }
+
+  let count = 0;
+  let lastClick = 0;
+  trigger.addEventListener('click', function(){
+    const now = Date.now();
+    if (now - lastClick > 1600) count = 0;
+    lastClick = now;
+    count += 1;
+    if (count >= 5){
+      block.classList.add('is-visible');
+      block.setAttribute('aria-hidden','false');
+      syncStripeText();
+      count = 0;
+    }
+  });
+
+  function openOutcome(type){
+    const c = copy[lang()];
+    if (!outcomeModal) return;
+    const success = type === 'success';
+    outcomeIcon.className = 'stripe-outcome-icon ' + (success ? 'success' : 'failure');
+    outcomeIcon.textContent = success ? '✓' : '!';
+    outcomeTitle.textContent = success ? c.outcome_success_title : c.outcome_failure_title;
+    outcomeText.textContent = success ? c.outcome_success_text : c.outcome_failure_text;
+    outcomeBack.textContent = c.outcome_back;
+    outcomeRetry.textContent = c.outcome_retry;
+    outcomeRetry.style.display = success ? 'none' : 'inline-flex';
+    outcomeModal.classList.add('is-open');
+    outcomeModal.setAttribute('aria-hidden','false');
+    document.body.classList.add('stripe-modal-open');
+  }
+  function closeOutcome(){
+    if (!outcomeModal) return;
+    outcomeModal.classList.remove('is-open');
+    outcomeModal.setAttribute('aria-hidden','true');
+    if (!modal.classList.contains('is-open')) document.body.classList.remove('stripe-modal-open');
+  }
+
+  function openModal(){
+    syncStripeText();
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('stripe-modal-open');
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('stripe-modal-open');
+  }
+
+  const amountInput = document.getElementById('stripeAmount');
+  amountInput?.addEventListener('input', syncStripeText);
+
+  openBtn?.addEventListener('click', openModal);
+  closeBtn?.addEventListener('click', closeModal);
+  modal.querySelectorAll('[data-close-stripe="true"]').forEach(el => el.addEventListener('click', closeModal));
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      closeModal();
+      closeOutcome();
+    }
+  });
+
+  outcomeBack?.addEventListener('click', function(){
+    closeOutcome();
+  });
+
+  outcomeRetry?.addEventListener('click', function(){
+    closeOutcome();
+    openModal();
+  });
+
+  outcomeModal?.querySelector('.stripe-outcome-backdrop')?.addEventListener('click', closeOutcome);
+
+  form?.addEventListener('submit', function(e){
+    e.preventDefault();
+    const c = copy[lang()];
+    if (status) status.textContent = c.processing;
+    const payBtn = form.querySelector('.stripe-demo-pay');
+    if (payBtn) payBtn.disabled = true;
+
+    setTimeout(function(){
+      // Test-only simulation: mostly successful, occasional failure to test both flows.
+      const isSuccess = Math.random() >= 0.25;
+      if (status) status.textContent = '';
+      if (payBtn) payBtn.disabled = false;
+      closeModal();
+      openOutcome(isSuccess ? 'success' : 'failure');
+    }, 900);
+  });
+
+  // Keep Stripe demo text aligned when the site's language changes
+  document.querySelectorAll('.language-option, .mobile-language-option').forEach(function(btn){
+    btn.addEventListener('click', function(){ setTimeout(syncStripeText, 0); });
+  });
+});
+</script><div aria-hidden="true" class="stripe-outcome-modal" id="stripeOutcomeModal"><div class="stripe-outcome-backdrop"></div><div aria-labelledby="stripeOutcomeTitle" aria-modal="true" class="stripe-outcome-card" role="dialog"><div class="stripe-outcome-icon" id="stripeOutcomeIcon"></div><h3 id="stripeOutcomeTitle"></h3><p class="stripe-outcome-text" id="stripeOutcomeText"></p><div class="stripe-outcome-actions"><button class="stripe-outcome-back" id="stripeOutcomeBack" type="button">Retour</button><button class="stripe-outcome-retry" id="stripeOutcomeRetry" type="button">Réessayer</button></div></div></div></body>
 </html>
